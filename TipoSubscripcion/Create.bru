@@ -1,0 +1,23 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL_INGENIA}}/tipo-subscripcion
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "prueba 2",
+    "descripcion": "una prueba de una subscriocion",
+    "duracion": 1,
+    "cursos_permitidos": 1,
+    "precio": 10,
+    "activo": true,
+    "thumbnailurl": "https://localhost:3100/imagenes/unaimagen.png"
+  }
+}

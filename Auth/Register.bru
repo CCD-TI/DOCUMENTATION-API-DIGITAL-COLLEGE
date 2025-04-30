@@ -1,0 +1,62 @@
+meta {
+  name: Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL_INGENIA}}/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "correo": "FernandoPadre@dominio.com",
+    "nombres_alumno": "Fernando",
+    "apellidos_alumno": "Gómez Pérez",
+    "apellido_paterno_alumno": "Gómez",
+    "apellido_materno_alumno": "Pérez",
+    "dni_alumno": "12345678",
+    "tipo_documento": 1,
+    "nombres_padre": "Carlos",
+    "apellidos_padre": "Rodríguez López",
+    "apellido_paterno_padre": "Rodríguez",
+    "apellido_materno_padre": "López",
+    "dni_padre": "87654321",
+    "telefono": "987654321",
+    "ubigeo": "150101",
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "Lima",
+    "direccion": "Av. Siempreviva 742",
+    "genero": "Masculino",
+    "Rol_id": 2,
+    "fecha_nacimiento": "1980/05/15",
+    "hijos": [
+      {
+        "dni_alumno":"10203040",
+        "nombres_alumno":"Sofía",
+        "apellidos_alumno":"Gómez Rodríguez",
+        "correo": "SofiaHijo@gmail.com",
+        "tipo_documento": 1,
+        "fecha_nacimiento": "2015/03/10",
+        "genero": "Femenino",
+        "Nivel_id": 1,
+        "Grado_id": 1
+      },
+      {
+        "dni": "50607080",
+        "nombres_alumno":"Mateo",
+        "apellidos_alumno":"Gómez Rodríguez",
+        "correo": "MateoHijo@gmail.com",
+        "dni_alumno":"50607080",
+        "tipo_documento": 1,
+        "fecha_nacimiento": "2018/07/22",
+        "genero": "Masculino",
+        "Nivel_id": 1,
+        "Grado_id": 1
+      }
+    ]
+  }
+}

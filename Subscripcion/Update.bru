@@ -1,0 +1,18 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL_INGENIA}}/subscripciones/38b97597-fa99-4f77-aed3-72ec79cfe5af
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "MMHVO",
+    "tiposubscripcionId": 3
+  }
+}

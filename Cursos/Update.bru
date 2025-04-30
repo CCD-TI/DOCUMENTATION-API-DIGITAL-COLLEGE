@@ -1,0 +1,22 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL_INGENIA}}/cursos/09a03864-1ce7-46d3-a6f2-0af6acf7aa79
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "nombre": "Aritmetica",
+      "descripcion": "info",
+      "creditos":1,
+      "gradoId":1,
+      "areaId":1,
+      "urlPortada":""
+  }
+}

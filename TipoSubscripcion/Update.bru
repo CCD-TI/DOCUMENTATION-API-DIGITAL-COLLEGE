@@ -1,0 +1,23 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL_INGENIA}}/tipo-subscripcion/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Cambiando nombre 2",
+    "descripcion": "una prueba de una subscriocion",
+    "duracion": 1,
+    "cursos_permitidos": 1,
+    "precio": 10,
+    "activo": true,
+    "thumbnailurl": "https://localhost:3100/imagenes/unaimagen.png"
+  }
+}

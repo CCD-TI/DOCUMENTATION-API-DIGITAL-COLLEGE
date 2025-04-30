@@ -1,0 +1,18 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL_INGENIA}}/subscripciones-cursos/09a03864-1ce7-46d3-a6f2-0af6acf7aa79
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "subscripcionId": 1,
+      "cursoId": 1
+  }
+}
