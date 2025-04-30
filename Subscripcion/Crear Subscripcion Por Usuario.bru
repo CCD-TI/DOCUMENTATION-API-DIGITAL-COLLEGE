@@ -1,0 +1,34 @@
+meta {
+  name: Crear Subscripcion Por Usuario
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{URL_INGENIA}}/subscripciones/createforuser
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "Subscripciones": [
+      {
+        "usuarioId": "",
+        "tiposubscripcionId": "",
+        "cursosIds": [
+          "",
+          ""
+        ]
+      },
+      {
+        "usuarioId": "",
+        "tiposubscripcionId": "",
+        "cursosIds": [
+          "",
+          ""
+        ]
+      }
+    ]
+  }
+}

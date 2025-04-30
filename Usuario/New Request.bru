@@ -5,7 +5,28 @@ meta {
 }
 
 get {
-  url: 
-  body: none
+  url: {{URL_INGENIA}}/usuarios
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "correo": "user@example.com",
+    "telefono": "stringstr",
+    "Rol_id": 1,
+    "Nivel_id": 0,
+    "Grado_id": 0,
+    "nombres_alumno": "string",
+    "apellidos_alumno": "string",
+    "apellido_paterno_alumno": "string",
+    "apellido_materno_alumno": "string",
+    "dni_alumno": "65950623",
+    "nombres_padre": "string",
+    "apellidos_padre": "string",
+    "apellido_paterno_padre": "string",
+    "apellido_materno_padre": "string",
+    "dni_padre": "37022368",
+    "hijos": []
+  }
 }
