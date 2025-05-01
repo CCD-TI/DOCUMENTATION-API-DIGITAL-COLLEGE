@@ -1,0 +1,18 @@
+meta {
+  name: Login App
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL_INGENIA}}/auth/login-app
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "SofiaHijo@gmail.com",
+    "password": "10203040"
+  }
+}

@@ -4,8 +4,8 @@ meta {
   seq: 6
 }
 
-get {
-  url: {{URL_INGENIA}}/subscripciones/createforuser
+post {
+  url: {{URL_INGENIA}}/subscripciones/createforusers
   body: json
   auth: inherit
 }
@@ -14,19 +14,19 @@ body:json {
   {
     "Subscripciones": [
       {
-        "usuarioId": "",
-        "tiposubscripcionId": "",
+        "usuarioId": "0ebadba2-050e-4f36-9d8a-8caa402d7f05",
+        "tiposubscripcionId": 1,
         "cursosIds": [
-          "",
-          ""
+          "011bb46d-6fa3-4517-8f5e-3db2f7dc276d",
+          "0456711b-6b92-4f48-8793-e33c4742fdf7"
         ]
       },
       {
-        "usuarioId": "",
-        "tiposubscripcionId": "",
+        "usuarioId": "1fb9c15f-a75b-4174-9645-02b07d1d99d6",
+        "tiposubscripcionId": 2,
         "cursosIds": [
-          "",
-          ""
+          "011bb46d-6fa3-4517-8f5e-3db2f7dc276d",
+          "0608fd99-8789-403f-ae78-a13c72588717"
         ]
       }
     ]

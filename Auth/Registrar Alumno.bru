@@ -1,0 +1,29 @@
+meta {
+  name: Registrar Alumno
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{URL_INGENIA}}/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "nombres_alumno": "PAUL YEFFERT",
+      "apellidos_alumno": "PEREZ SANJINEZ",
+      "apellido_paterno_alumno": "PEREZ",
+      "apellido_materno_alumno": "SANJINEZ",
+      "tipo_documento": 1,
+      "correo": "jeffertsap@hotmail.com",
+      "telefono": "948701436",
+      "dni_alumno": "75069452",
+      "genero": "M",
+      "fecha_nacimiento": "06/03/2002",
+      "Rol_id": 1,
+      "Grado_id": 5,
+      "Nivel_id": 2
+  }
+}

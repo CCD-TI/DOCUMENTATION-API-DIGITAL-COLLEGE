@@ -1,0 +1,17 @@
+meta {
+  name: Validate
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL_INGENIA}}/auth/validate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFmYjljMTVmLWE3NWItNDE3NC05NjQ1LTAyYjA3ZDFkOTlkNiIsInJvbF9pZCI6MSwibm9tYnJlcyI6IlNvZsOtYSIsImFwZWxsaWRvcyI6IkfDs21leiBSb2Ryw61ndWV6IiwiaWF0IjoxNzQ2MDQwMDU0LCJleHAiOjE3NDYxMjY0NTR9.9HDiP-dipJ0sMXbKeoRJXtsUDk3MQLveTx89KFBglK4"
+  }
+}
