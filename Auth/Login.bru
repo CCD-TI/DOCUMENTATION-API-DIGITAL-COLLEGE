@@ -1,0 +1,17 @@
+meta {
+  name: Login
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{URL_INGENIA}}/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "d4ta": "chJYCK7cCbOBzrmBmtsWumfN8umD8eq/kR+1W8RpHOftQznn07d2l5loTCM5ynUxL3sBnwCqgtXNiBpo7U25HA6zPPR/cBMdoKa+/68a/mlMvu7dObt79YTviJTr/fby+tprPPzmodd5Kn21K4UD0aK5jRXxechoG/XL/YpP2Iw0CuUPVCl4E9nxNxJeUtjbDX2uX4YE9QTVV3k20MRRG+A8QBFRNYHTlOHJ8z2Ypc8wgjFd1vw+AVv1Zcxtbq0jt1hfHiYIwOzl1Vs8Hzbu7q7cxnW9SrvqbQxv/36Wiw4CRLIpQJtYdU0aqKWlbo8mCzX3fd+N7TqPIEkhdRJnhQ=="
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: mailing'
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL_INGENIA}}/usuarios/validar-datos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "d4ta": "HdfbqKZ2HUMCBv53ifSbGrlKcKP+fd8DWECmnVDqPgGjs/QR4/0CM8Nm4tj7szBQneNP1mPc7NoIovLE1ksAVj4Eik3ZDED0M/6PmPPJhgewZqIuaW8LWtQVt4/Uu85B3yxfm9q6WAIEK8JzDSCEur2sf3tWlDKiEVKvjAZC1J7sZwaqp11SDau0IdTAgzBwbBMw1JOjqcsnS351wKUm3rQDWa0e5MiHKOn7mFF0VkBbZ5cY2q5YufyuwrBBfI1LYGWGxiN5ZD1qpCraD/APco0k7i60RrPEqRONtIoDK+6fojEhGGptBPmE2PrEr6gQN24PAHIZxpPP5xipW4RvzA=="
+  }
+}

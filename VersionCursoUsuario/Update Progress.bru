@@ -1,0 +1,22 @@
+meta {
+  name: Update Progress
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL_INGENIA}}/versioncurso-usuarios/updateprogress
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU4NDc0MTFlLTQ2MzYtNDY5OS1hMDkzLTk2NzE5MjQ2MDQ5NyIsInJvbF9pZCI6MSwibm9tYnJlcyI6IlNvZsOtYSIsImFwZWxsaWRvcyI6IkfDs21leiBSb2Ryw61ndWV6IiwiaWF0IjoxNzQ2NzYwODM2LCJleHAiOjE3NDY4NDcyMzZ9.IOEcHiciD5ipzhO25nfZcTepyZx-d6FpwHPl7IeJipg
+}
+
+body:json {
+  {
+    "versioncursoUsuarioId":"43368665-094d-4a01-8d66-4eb3f91fab21",
+    "progress":10
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: GetByUserId
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL_INGENIA}}/versioncurso-usuarios/getByUserId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU4NDc0MTFlLTQ2MzYtNDY5OS1hMDkzLTk2NzE5MjQ2MDQ5NyIsInJvbF9pZCI6MSwibm9tYnJlcyI6IlNvZsOtYSIsImFwZWxsaWRvcyI6IkfDs21leiBSb2Ryw61ndWV6IiwiaWF0IjoxNzQ2NzYwODM2LCJleHAiOjE3NDY4NDcyMzZ9.IOEcHiciD5ipzhO25nfZcTepyZx-d6FpwHPl7IeJipg
+}

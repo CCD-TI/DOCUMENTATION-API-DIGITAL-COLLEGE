@@ -1,0 +1,106 @@
+meta {
+  name: envio excel masivo 19
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://masivo.erpccd.com/api/masivo/masivos/excel
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "masivos": {
+          "name": "promo 19.90",
+          "cant": 1,
+          "delaymin": 90,
+          "delaymax": 120,
+          "flows": [
+              {
+                  "id": 174,
+                  "name": "FLUJO PROMOCIÓN DE LOCURA 19.90 (R1)",
+                  "mensajes": [
+                      {
+                          "id": "",
+                          "tipo": "imagen",
+                          "content": {
+                              "body": "https://pub-9d2abfa175714e64aed33b90722a9fd5.r2.dev/Masivos/Imagenes/19.90%20(1).jpg",
+                              "footer": ""
+                          }
+                      },
+                      {
+                          "id": "",
+                          "tipo": "texto",
+                          "content": {
+                              "body": "💥 *SOLO POR HOY* ¡Potencia tu perfil profesional!  💙 desde *S/19.90* 🤩\n🔑 ACTIVA TU *¡PROMOCIÓN DE LOCURA* con la palabra *SI* y aprovecha esta *¡OPORTUNIDAD ÚNICA!* 🚀\n\n*🎊 BENEFICIOS INCLUIDOS 🎊* \n1️⃣ Material exclusivo 🎁\n2️⃣ Certificado digital  🏅\n3️⃣ Clases disponibles 24/7 ⏰\n4️⃣ 50% Dto. para certificación acreditada *CIP* 💰\n\n🎯 Solicita la *LISTA DE CURSOS* 🚀o solicita un asesor para mayores beneficios 🙋🏻‍♂, al número 📲 +51 926 470 139 o al siguiente \n*Link 👉🏻*\nhttps://wa.link/pr52fi",
+                              "footer": ""
+                          }
+                      }
+                  ],
+                  "cursos": [
+                      "FLUJO PROMOCIÓN DE LOCURA 19.90"
+                  ],
+                  "variables": {},
+                  "createdAt": "2025-05-08T22:27:01.000Z",
+                  "updatedAt": "2025-05-08T22:27:01.000Z"
+              }
+          ],
+          "flowResponder": {
+              "id": 174,
+              "name": "FLUJO PROMOCIÓN DE LOCURA 19.90 (R1)",
+              "mensajes": [
+                  {
+                      "id": "",
+                      "tipo": "imagen",
+                      "content": {
+                          "body": "https://pub-9d2abfa175714e64aed33b90722a9fd5.r2.dev/Masivos/Imagenes/19.90%20(1).jpg",
+                          "footer": ""
+                      }
+                  },
+                  {
+                      "id": "",
+                      "tipo": "texto",
+                      "content": {
+                          "body": "💥 *SOLO POR HOY* ¡Potencia tu perfil profesional!  💙 desde *S/19.90* 🤩\n🔑 ACTIVA TU *¡PROMOCIÓN DE LOCURA* con la palabra *SI* y aprovecha esta *¡OPORTUNIDAD ÚNICA!* 🚀\n\n*🎊 BENEFICIOS INCLUIDOS 🎊* \n1️⃣ Material exclusivo 🎁\n2️⃣ Certificado digital  🏅\n3️⃣ Clases disponibles 24/7 ⏰\n4️⃣ 50% Dto. para certificación acreditada *CIP* 💰\n\n🎯 Solicita la *LISTA DE CURSOS* 🚀o solicita un asesor para mayores beneficios 🙋🏻‍♂, al número 📲 +51 926 470 139 o al siguiente \n*Link 👉🏻*\nhttps://wa.link/pr52fi",
+                          "footer": ""
+                      }
+                  }
+              ],
+              "cursos": [
+                  "FLUJO PROMOCIÓN DE LOCURA 19.90"
+              ],
+              "variables": {},
+              "createdAt": "2025-05-08T22:27:01.000Z",
+              "updatedAt": "2025-05-08T22:27:01.000Z"
+          },
+          "flagResponder": true,
+          "bot": {
+              "id": 881,
+              "name": "botp",
+              "containerId": "a21812ca15bfc268f044b272d939aeb0d0584b9c79adbfbb2d9350ff6732b451",
+              "containername": "bot_responder_987654321",
+              "port": 3118,
+              "pairingCode": null,
+              "phone": "987654321",
+              "tipo": "responder",
+              "db_name": "bot_db_987654321",
+              "status": null,
+              "createdAt": "2025-05-07T21:40:32.000Z",
+              "updatedAt": "2025-05-07T21:40:32.000Z"
+          },
+          "sheet": {
+              "id": 5,
+              "spreadsheetId": "13MG3SElNbeahnyaNciIOAmE6hzE3VikhmgGJmj_CNdA",
+              "sheetId": 1767368727,
+              "name": "MASIVO_EGP",
+              "createdAt": "2025-04-24T21:20:18.000Z",
+              "updatedAt": "2025-04-24T21:20:18.000Z"
+          }
+      },
+      "numeros": [
+          "51948701436"
+      ]
+  }
+}

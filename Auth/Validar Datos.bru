@@ -1,0 +1,17 @@
+meta {
+  name: Validar Datos
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{URL_INGENIA}}/usuarios/validar-datos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "d4ta": "FF/SFmVlRMc4HAbgK2TNBjEt+q+LUJWpU/aIP3sj5vXDqrnkLDxUJyp1X7KG2t5ec4hz1n8b2DkSOxqaKUqGQulR+4uD6cyw9KOZJ+MuUwwdkXPOPGykvE1fo5IeDXWhVAssPL0gTyOVhaqzpEssAFfg15PlhFyVRD7zo/kZV6JJIpHgpQOwJQO1RKVTt0Pa2WlKFremFJBiXyZg4qMp445WCFuHnG3tAcLCEo9UREekxxU+jubprI6xfyQTvIRVWjjVNx1P6v0YSbomUOJYokWOKnFwXSKAceplI1yoNijEKXazhRw9TvwwQEmOz8qBbKsTeAwX1igCcUtBtOcwJw=="
+  }
+}
