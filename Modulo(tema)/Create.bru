@@ -1,0 +1,21 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL_INGENIA}}/modulos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "titulo":"Minimo común multiplo Problemas",
+    "descripcion":"una descripcion adicional que se refiere al tema",
+    "orden":6,
+    "versionCursoId":"249ee42b-bd79-4a0e-8e1b-6f53539ddb20",
+    "bimestre":3
+  }
+}
