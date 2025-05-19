@@ -1,0 +1,21 @@
+meta {
+  name: Create Seccion
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL_INGENIA}}/secciones
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "titulo":"Ejercicio 2",
+    "orden": 2,
+    "moduloId": "4aebb78f-c26f-4a96-b22d-603c2362bdbc",
+    "grupo": "Trabajamos en Equipo",
+    "tipo": "video"
+  }
+}

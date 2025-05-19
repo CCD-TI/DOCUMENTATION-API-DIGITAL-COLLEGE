@@ -1,0 +1,51 @@
+meta {
+  name: Relacion Evaluacion Pregunta
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL_INGENIA}}/evaluacion-pregunta/bulk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+      {
+          "evaluacionId": 1,
+          "preguntaId": 1,
+          "puntaje": 20,
+          "orden": 1
+      },
+      {
+          "evaluacionId": 1,
+          "preguntaId": 2,
+          "puntaje": 20,
+          "orden": 2
+      },
+      {
+          "evaluacionId": 1,
+          "preguntaId": 3,
+          "puntaje": 20,
+          "orden": 3
+      },
+      {
+          "evaluacionId": 1,
+          "preguntaId": 4,
+          "puntaje": 20,
+          "orden": 4
+      },
+      {
+          "evaluacionId": 1,
+          "preguntaId": 5,
+          "puntaje": 20,
+          "orden": 5
+      },
+      {
+          "evaluacionId": 1,
+          "preguntaId": 6,
+          "puntaje": 20,
+          "orden":6}
+  ]
+}
