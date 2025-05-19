@@ -1,3 +1,62 @@
 meta {
   name: Evaluaciones
 }
+
+docs {
+  ## Traer Preguntas para Evaluación
+  
+  Reemplazar: "evaluacionId" con la real evaluacionId.
+  
+  {{URL_INGENIA}}/evaluaciones/estudiante/evaluacionId/preguntas
+  
+  ## En Iniciar Evaluación: 
+  
+  -Enviar el "usuarioId" al hacer Login se obtiene.
+  -Id de la evaluación a tomar.
+  
+  Y colocar en el JSON y al enviar el POST, te devuelve este json:
+  
+  {
+    "id": "4c1fb3cf-9040-4071-9e08-d4a229fe876a",
+    "usuarioId": "518d88a9-449d-4a4b-8ecb-a9653d8e7460",
+    "evaluacionId": 1,
+    "intento": 1,
+    "fechaInicio": "2025-05-19T10:22:13.459Z",
+    "estadoUsuario": "en_progreso",
+    "estadoEvaluacion": "no_evaluado"
+  }
+  
+  ## En Enviar Respuesta:
+  
+  En la respuesta de "Iniciar Evaluación", copiar el "id" y pegarlo en el POST para "usuarioEvaluacionId" y el lo demás, serian las respuestas del estudiante.
+  
+  ## En Traer Información del Intentos:
+  
+  Reemplazar: "usuarioId" con el real usuarioId.
+  Reemplazar: "evaluacionId" con la real evaluacionId.
+  
+  {{URL_INGENIA}}/usuario-evaluaciones/usuarioId/evaluacion/evaluaciónId/intentos
+  
+  Devolverá el historial de intentos.
+  EJEMPLO:
+  
+  [
+    {
+      "id": "4c1fb3cf-9040-4071-9e08-d4a229fe876a",
+      "intento": 1,
+      "calificacion": 83.3333,
+      "fechaInicio": "2025-05-19T10:22:13.000Z",
+      "fechaFinalizacion": "2025-05-19T10:27:21.000Z",
+      "estadoUsuario": "finalizado",
+      "estadoEvaluacion": "evaluado"
+    }
+  ]
+  
+  ## En Traer Historial Respuestas: por intento
+  
+  En la respuesta de "Traer Información del Intentos", copiar el "id" y pegarlo en el GET para "intentoId".
+  
+  {{URL_INGENIA}}/usuario-evaluaciones/intentoId/detalle
+  
+  Lo que devolverá las respuestas enviadas de ese intento en especifico.
+}
