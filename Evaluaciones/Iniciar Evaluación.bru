@@ -1,0 +1,18 @@
+meta {
+  name: Iniciar Evaluación
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL_INGENIA}}/usuario-evaluaciones/iniciar
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "usuarioId": "eF84d5f2-20af-4fc0-b24e-c2d4879a6bad",
+    "evaluacionId": 1
+  }
+}
