@@ -1,0 +1,16 @@
+meta {
+  name: Resumen de Progreso
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{URL_INGENIA}}/usuario-progreso/resumen/:usuarioId/:versionCursoId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  usuarioId: 25c44082-f396-45ff-9f54-3f0115459c3c
+  versionCursoId: 249ee42b-bd79-4a0e-8e1b-6f53539ddb20
+}

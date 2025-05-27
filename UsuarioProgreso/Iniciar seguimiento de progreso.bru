@@ -1,0 +1,18 @@
+meta {
+  name: Iniciar seguimiento de progreso
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL_INGENIA}}/usuario-progreso/iniciar-seguimiento
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "usuarioId": "",
+    "versionCursoId": ""
+  }
+}

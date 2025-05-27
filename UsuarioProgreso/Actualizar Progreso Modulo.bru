@@ -1,0 +1,22 @@
+meta {
+  name: Actualizar Progreso Modulo
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL_INGENIA}}/usuario-progreso/actualizar-progreso-modulo
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "usuarioProgresoId":"",
+    "moduloId":"",
+    "porcentajeCompletado":1,
+    "puntosAcumulados":1,
+    "estadoEvaluacion":"",
+    "calificacionEvaluacion": 1
+  }
+}

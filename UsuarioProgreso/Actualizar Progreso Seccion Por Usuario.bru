@@ -1,0 +1,22 @@
+meta {
+  name: Actualizar Progreso Seccion Por Usuario
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{URL_INGENIA}}/usuario-progreso/actualizar-progreso-seccion-por-usuario
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "usuarioId": 4,
+    "versionCursoId":"",
+    "seccionId": "8a1c9459-48a4-476e-9613-daab5bd5a0c1",
+    "estado": "completado",
+    "puntosObtenidos": 10,
+    "tiempoTotal": 1
+  }
+}
