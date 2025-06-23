@@ -1,0 +1,25 @@
+meta {
+  name: Agregar Dispositivo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL_INGENIA}}/dispositivos
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWFjZjBiLWUwYWMtNDYzZC1iZmQwLTc4ZTYyNjlmZjA4NSIsImNvcnJlbyI6ImplZmZlcnRzYXBAaG90bWFpbC5jb20iLCJyb2xfaWQiOjEsIm5vbWJyZXMiOiJQQVVMIFlFRkZFUlQiLCJpYXQiOjE3NTA3MDA5NzcsImV4cCI6MTc1MDc4NzM3N30.bA_1gYWdpIjNNdaep7Hu6kdspwPSWGkdjNczei--BTA
+}
+
+body:json {
+  {
+    "token": "74j67s8w4",
+    "usuarioId": "665acf0b-e0ac-463d-bfd0-78e6269ff085",
+    "platform": "android|ios|web", // opcional
+    "deviceInfo": "Información del dispositivo", // Opcional
+    "isActive": true
+  }
+}

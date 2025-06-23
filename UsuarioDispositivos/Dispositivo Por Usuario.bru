@@ -1,0 +1,15 @@
+meta {
+  name: Dispositivo Por Usuario
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{URL_INGENIA}}/dispositivos/by-user/665acf0b-e0ac-463d-bfd0-78e6269ff085
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWFjZjBiLWUwYWMtNDYzZC1iZmQwLTc4ZTYyNjlmZjA4NSIsImNvcnJlbyI6ImplZmZlcnRzYXBAaG90bWFpbC5jb20iLCJyb2xfaWQiOjEsIm5vbWJyZXMiOiJQQVVMIFlFRkZFUlQiLCJpYXQiOjE3NTA3MDA5NzcsImV4cCI6MTc1MDc4NzM3N30.bA_1gYWdpIjNNdaep7Hu6kdspwPSWGkdjNczei--BTA
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Obtener Todos Dispositivos
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{URL_INGENIA}}/dispositivos
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJjZjNmMjZlLWFjODYtNDczZi1hZTBiLTQ5ODYyYWNhMDJkNiIsImNvcnJlbyI6ImplZmZlcnRzYXBAaG90bWFpbC5jb20iLCJyb2xfaWQiOjEsIm5vbWJyZXMiOiJQQVVMIFlFRkZFUlQiLCJpYXQiOjE3NTA2OTc2NjAsImV4cCI6MTc1MDc4NDA2MH0.5Sfn5gjAOvPnffqMaaXBK0yRb_Iv3kNjSSd4jy5zgY0
+}
